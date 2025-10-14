@@ -1,0 +1,15 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "typescript": "html"
+  },
+  "files.associations": {
+    "*.component.html": "html",
+    "*.html": "html",
+    "*.scss": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.experimental.configFile": "./src/styles.scss"
+}
