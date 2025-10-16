@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import '@fortawesome/fontawesome-svg-core/styles.css';
 
 @theme {
   --color-primary: #051923;
@@ -8,7 +10,62 @@
   --color-blue: #00a6fb;
 }
 
+:root {
+  --color-primary: #051923;
+  --color-neon: #6fffe9;
+  --color-cyan: #62b6cb;
+  --color-blue: #00a6fb;
+}
+
 body {
-  background-color: var(--color-primary);
+  background-color: theme(--color-primary);
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+@media (min-height: 1000px) {
+  :root {
+    font-size: 30px;
+  }
+}
+
+.section-padding {
+  padding: 0 0.75rem;
+}
+
+.about-section-padding {
+  padding: 0 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .section-padding,
+  .about-section-padding {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-section-padding {
+    padding: 0 2.5rem 0 20%;
+  }
+}
+
+.label {
+  padding: 5px 10px;
+  width: fit-content;
+  height: fit-content;
+  color: theme(--color-neon);
+  border: 1px solid theme(--color-neon);
+  border-radius: 50px;
+}
+
+@media (max-width: 640px) {
+  .label {
+    padding: 2px 8px;
+    font-size: 0.75rem;
+  }
+}
+
+img,
+video {
+  max-width: none;
 }

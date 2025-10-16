@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+  .home-link {
+    width: 50vw;
+  }
+}
+
+.desc-skill-highlight {
+  position: relative;
+}
+
+.desc-skill-highlight {
+  color: transparent;
+  font-weight: 500;
+  background: linear-gradient(to right, var(--color-neon) 50%, white 50%);
+  background-size: 200%;
+  background-position: right;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: background-position 500ms ease-in-out;
+}
+
+.desc-skill-highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: var(--color-neon);
+  height: 1px;
+  width: 0;
+  transition: width 500ms ease-in-out;
+}
+
+.desc-skill-highlight[activate="true"] {
+  background-position: left;
+}
+
+.desc-skill-highlight[activate="true"]::after {
+  width: 100%;
+}
+
+#home-about-link span:nth-child(2),
+#home-work-link span:nth-child(2) {
+  transition: translate 300ms ease-in-out;
+}
+
+#home-about-link:hover span:nth-child(2) {
+  translate: 0 10px;
+}
+
+#home-work-link:hover span:nth-child(2) {
+  translate: 10px 0;
+}
