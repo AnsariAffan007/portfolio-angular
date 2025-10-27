@@ -19,4 +19,8 @@ export class Home {
   descMouseLeave() {
     this.descHovering = false;
   }
+
+  openResume() {
+    window.open("/Mohammed_Affan-Ansari.pdf", '_blank');
+  }
 }
