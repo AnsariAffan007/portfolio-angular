@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLinkWithHref } from '@angular/router';
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -10,7 +10,7 @@ config.autoAddCss = false;
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
-  imports: [RouterOutlet, FontAwesomeModule]
+  imports: [RouterOutlet, FontAwesomeModule, RouterLinkWithHref]
 })
 export class App {
   protected readonly title = signal('portfolio_pro-angular');
