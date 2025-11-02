@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet, RouterLinkWithHref } from '@angular/router';
+import { RouterOutlet, RouterLinkWithHref, Router } from '@angular/router';
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
@@ -15,6 +15,8 @@ config.autoAddCss = false;
   imports: [RouterOutlet, FontAwesomeModule, RouterLinkWithHref, NgClass]
 })
 export class App {
+  constructor(private router: Router) { }
+
   protected readonly title = signal('portfolio_pro-angular');
 
   faLinkedin = faLinkedin
@@ -24,5 +26,10 @@ export class App {
   menuOpen: boolean = false;
   toggleMenu() {
     this.menuOpen = !this.menuOpen
+  }
+
+  handleLinkClick(section: "" | "about" | "work" | "contact-me") {
+    this.menuOpen = false;
+    this.router.navigate([`/${section}`])
   }
 }

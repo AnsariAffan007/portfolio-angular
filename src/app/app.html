@@ -6,9 +6,9 @@
     [ngClass]="{'translate-y-[-100svh]': !menuOpen}">
     <nav class="text-center lg:hidden flex flex-col justify-center gap-y-20">
       <div class="text-slate-200 -mt-10 space-y-5">
-        <h2 class="font-[900] text-4xl">ABOUT</h2>
-        <h2 class="font-[900] text-4xl">WORK</h2>
-        <h2 class="font-[900] text-4xl">CONTACT</h2>
+        <h2 class="font-[900] text-4xl" (click)="handleLinkClick('about')">ABOUT</h2>
+        <h2 class="font-[900] text-4xl" (click)="handleLinkClick('work')">WORK</h2>
+        <h2 class="font-[900] text-4xl" (click)="handleLinkClick('contact-me')">CONTACT</h2>
       </div>
       <div class="text-slate-200 space-x-5">
         <a href="https://www.linkedin.com/in/affan-ansari-95b58b24a/" target="_blank"
@@ -28,9 +28,7 @@
     <nav class="flex items-center justify-between md:justify-normal h-full">
 
       <div class="w-1/3 flex items-center h-full ps-5 sm:ps-10">
-        <a routerLink="/" class="h-full flex justify-center items-center">
-          <img src="/AA_logo.png" alt="Affan Logo" class="h-1/2">
-        </a>
+        <img src="/AA_logo.png" alt="Affan Logo" class="h-1/2 cursor-pointer" (click)="handleLinkClick('')">
       </div>
 
       <div
@@ -50,8 +48,11 @@
             <fa-icon [icon]="faGithub"></fa-icon>
           </a>
         </div>
-        <div class="w-1/2 h-full flex items-center justify-center hover:[&>a]:text-neon border-l border-white/15">
-          <a href="#" class="transition-colors duration-500 text-slate-400">CONTACT ME</a>
+        <div class="w-1/2 h-full hover:[&>a]:text-neon border-l border-white/15">
+          <a routerLink="contact-me"
+            class="transition-colors duration-500 text-slate-400 h-full w-full flex items-center justify-center">
+            CONTACT ME
+          </a>
         </div>
 
       </div>
