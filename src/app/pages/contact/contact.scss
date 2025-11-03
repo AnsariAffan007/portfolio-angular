@@ -1,0 +1,74 @@
+:host {
+  flex: 1;
+}
+
+#msg-textarea {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: top 300ms, transform 300ms;
+}
+
+.input-label[input-focused] {
+  top: 0;
+}
+
+.input {
+  position: relative;
+  width: 75%;
+}
+
+.active-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--color-neon);
+  transition: width 500ms;
+}
+
+.active-underline[input-focused] {
+  width: 75%;
+}
+
+@media (max-width: 768px) {
+  .input, .active-underline[input-focused] {
+    width: 100%;
+  }
+}
+
+.submit-btn {
+  background-color: var(--color-neon);
+  /* clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 100%, 0 0); */
+}
+
+/* Display loading icon on pending state */
+.submit-btn[pending]>.send-text, 
+.submit-btn[pending]>.send-icon {
+  display: none;
+}
+
+.submit-btn[pending]>.loading-icon {
+  display: block;
+}
+
+/* Display success status on success state */
+.submit-btn[success]>.send-text, 
+.submit-btn[success]>.send-icon,
+.submit-btn[success]>.loading-icon {
+  display: none;
+}
+
+.submit-btn[success]>.success-text,
+.submit-btn[success]>.success-icon {
+  display: block;
+}

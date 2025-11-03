@@ -1,1 +1,46 @@
-<p>contact works!</p>
+<section class="h-full">
+  <form action="" class="h-full">
+
+    <div class="grid grid-cols-3 grid-rows-5 h-full">
+
+      <div
+        class="col-span-3 lg:col-span-2 row-span-3 lg:row-span-4 section-padding flex flex-col justify-center gap-y-4 lg:gap-y-14 border-b border-white/15">
+        <div class="mb-2 lg:mb-0 flex gap-x-3 text-2xl lg:text-4xl">
+          <!-- <span class="label">Contact Me</span> -->
+          <span class="text-white font-bold">Share your Ideas</span>
+          <fa-icon [icon]="faLightBulb" class="text-neon"></fa-icon>
+        </div>
+        <div class="mb-2 lg:mb-0 relative">
+          <input type="email" maxlength="50" id="email-input" name="from_email"
+            class="size-full bg-transparent border-b-2 border-white/30 focus:outline-none active:outline-none text-slate-300 py-2 sm:py-3 text-xs sm:text-sm lg:text-base input"
+            autocomplete="off" focused required (focus)="toggleFieldFocus('email', true)"
+            (blur)="toggleFieldFocus('email', false)" [attr.focused]="emailFocused ? `` : null">
+          <span class="active-underline email-underline" [attr.input-focused]="emailFocused ? `` : null"></span>
+          <label id="email-label" for="email-input" class="text-slate-400 text-xs sm:text-base input-label"
+            [attr.input-focused]="emailFocused ? `` : null">Email</label>
+        </div>
+        <div class="relative">
+          <textarea name="" id="msg-textarea" rows="1" maxlength="300" name="message"
+            class="size-full bg-transparent border-b-2 border-white/30 focus:outline-none active:outline-none text-slate-300 py-2 sm:py-3 text-xs sm:text-sm lg:text-base overflow-hidden resize-none input"
+            autocomplete="off" required (focus)="toggleFieldFocus('message', true)"
+            (blur)="toggleFieldFocus('message', false)" [attr.focused]="messageFocused ? `` : null"
+            (input)="resizeTextArea($event)"></textarea>
+          <span class="active-underline msg-underline" [attr.input-focused]="messageFocused ? `` : null"></span>
+          <label id="msg-label" for="msg-textarea" class="text-slate-400 text-xs sm:text-base input-label"
+            [attr.input-focused]="messageFocused ? `` : null">Message</label>
+        </div>
+        <button
+          class="w-20 sm:w-28 h-6 sm:h-10 text-xs sm:text-base outline-none submit-btn flex justify-center gap-x-2 [&>*]:my-auto">
+          <span class="font-semibold send-text">Send</span>
+          <img src="send.png" class="w-3 sm:w-4 send-icon" />
+          <i class="fa fa-spinner fa-spin text-sm sm:text-lg hidden loading-icon"></i>
+
+          <span class="font-semibold success-text hidden">Sent</span>
+          <i class="fa-regular fa-circle-check text-sm sm:text-lg hidden success-icon"></i>
+        </button>
+      </div>
+
+    </div>
+
+  </form>
+</section>
