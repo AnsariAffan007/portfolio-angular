@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCircleCheck, faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp, faCircleCheck, faEnvelope, faLightbulb, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +11,10 @@ import { faCircleCheck, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 export class Contact {
   faLightBulb = faLightbulb
   faCircleCheck = faCircleCheck
+  faEnvelope = faEnvelope
+  faArrowUp = faArrowUp
+  faLocationDot = faLocationDot
+  faPhone = faPhone
 
   emailFocused = false;
   messageFocused = false;
