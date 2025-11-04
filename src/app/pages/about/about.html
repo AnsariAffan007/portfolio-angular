@@ -1,1 +1,376 @@
-<p>about works!</p>
+<section id="aboutMe" class="about-section-padding h-full overflow-auto mb-20 relative"
+  (scroll)="onAboutScroll($event)">
+
+  <div class="scroll-wrapper py-16 select-none">
+    <a (click)="scrollToElement(`about-desc`)" class="text-slate-400 checkpoint about-checkpoint" #aboutCheckpoint
+      checkpoint>About Me</a>
+
+    <span class="scroll-track relative h-20 w-1">
+      <span #aboutToExpThumb class="absolute top-0 left-0 scroll-thumb about-exp-thumb"></span>
+    </span>
+
+    <a (click)="scrollToElement(`about-exp`)" class="text-slate-400 checkpoint exp-checkpoint" #expCheckpoint>Work
+      Experience</a>
+
+    <span class="scroll-track relative h-20 w-1">
+      <span #expToToolsThumb class="absolute top-0 left-0 scroll-thumb exp-tools-thumb"></span>
+    </span>
+
+    <a (click)="scrollToElement(`about-tools`)" class="text-slate-400 checkpoint tools-checkpoint"
+      #toolsCheckpoint>Preferred Tools</a>
+
+    <span class="scroll-track relative h-20 w-1">
+      <span #toolsToEducationThumb class="absolute top-0 left-0 scroll-thumb tools-education-thumb"></span>
+    </span>
+
+    <a (click)="scrollToElement(`about-education`)" class="text-slate-400 checkpoint education-checkpoint"
+      #educationCheckpoint>Education</a>
+
+    <span class="scroll-track relative h-20 w-1">
+      <span #educationToHobbiesThumb class="absolute top-0 left-0 scroll-thumb education-hobbies-thumb"></span>
+    </span>
+
+    <a (click)="scrollToElement(`about-hobbies`)" class="text-slate-400 checkpoint hobbies-checkpoint"
+      #hobbiesCheckpoint>Hobbies</a>
+
+    <span class="scroll-track relative h-20 w-1">
+      <span #hobbiesToReachoutThumb class="absolute top-0 left-0 scroll-thumb hobbies-reachout-thumb"></span>
+    </span>
+
+    <a (click)="scrollToElement(`about-reachout`)" class="text-slate-400 checkpoint reachout-checkpoint"
+      #reachoutCheckpoint>Reach Out</a>
+  </div>
+
+  <!-- My Description -->
+  <div #description id="about-desc" class="flex flex-col h-[100svh] justify-center -mt-[5svh] gap-y-2">
+    <span class="about-heading">About Me</span>
+    <p class="text-neon text-sm sm:text-xl font-bold text-justify tracking-wider">
+      I'm a UI/UX Designer and a Full Stack Web Developer based in Mumbai, India. My passion is to create
+      user-friendly web
+      applications and contribute to broader strategic objectives in Businesses.
+    </p>
+    <p class="text-slate-300 text-sm sm:text-xl text-justify">
+      I'm a 2024 Passout in Computer Engineering from the University of Mumbai, with a skillset of solving UI/UX
+      problems and implementing them
+      into website solutions through cutting edge technologies. My proficency mainly includes ReactJS and Material UI,
+      as well as low and high fidelity designing in Figma. I am experienced through many starter web development
+      projects, and through a 1 year internship. I love to keep up and work with the latest technologies and leverage
+      my development skills and creativity to contribute to the development of user-friendly web applications.
+    </p>
+  </div>
+  <!-- My description end -->
+
+  <!-- Experience -->
+  <div #experience id="about-exp" class="flex flex-col gap-y-6 pt-[10%] mb-[20%]">
+    <span class="about-heading">Work Experience</span>
+
+    <!-- <div class="white-shade-box p-4 rounded-2xl">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <h4 class="text-white text-md sm:text-xl font-semibold">Mosaic Apps</h4>
+          <span class="text-slate-400 text-xs sm:text-base">June 2024 - Present</span>
+        </div>
+        <span class="text-white text-xs sm:text-base">Frontend Developer</span>
+        <div class="mt-4">
+          <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-xl text-xs sm:text-base">ReactJS</span>
+          <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-xl text-xs sm:text-base">Redux</span>
+        </div>
+      </div> -->
+
+    <div class="white-shade-box p-4 rounded-2xl border border-slate-700">
+      <div class="flex flex-col sm:flex-row justify-between">
+        <h4 class="text-white text-md sm:text-xl font-semibold">Cloud Native Compliance Maven</h4>
+        <span class="text-slate-400 text-xs sm:text-base">June 2023 - Present</span>
+      </div>
+      <span class="text-white text-xs sm:text-base">Frontend Web Designer + Developer</span>
+      <div class="mt-4">
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-xl text-xs sm:text-base">ReactJS</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-xl text-xs sm:text-base">Material UI</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-xl text-xs sm:text-base">Figma</span>
+      </div>
+      <ul class="text-slate-300 sm:list-disc text-xs sm:text-base mt-6 text-justify space-y-3 sm:ml-6">
+        <hr class="sm:hidden border-white/20">
+        <li>Designed and translated business requirements into high fidelity designs in Figma.</li>
+        <hr class="sm:hidden border-white/20">
+        <li>Implemented the designs using ReactJS and Material UI, while employing best practices like Abstraction and
+          Modularization.</li>
+        <hr class="sm:hidden border-white/20">
+        <li>Implemented efficient UI/UX solutions to optimize user interactions and enhance overall user experience.
+        </li>
+        <hr class="sm:hidden border-white/20">
+        <li>Organized Knowledge Transfer sessions for new interns, giving context of the project and explaining the
+          codebase.</li>
+      </ul>
+    </div>
+
+    <div class="white-shade-box p-4 rounded-2xl border border-slate-700">
+      <div class="flex flex-col sm:flex-row justify-between">
+        <h4 class="text-white text-md sm:text-xl font-semibold">Mosaic Apps</h4>
+        <span class="text-slate-400 text-xs sm:text-base">June 2024 - Present</span>
+      </div>
+      <span class="text-white text-xs sm:text-base">Frontend Web Developer</span>
+      <div class="mt-4">
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-xl text-xs sm:text-base">ReactJS</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-xl text-xs sm:text-base">TypeScript</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-xl text-xs sm:text-base">Material UI</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-xl text-xs sm:text-base">Next.JS</span>
+      </div>
+      <ul class="text-slate-300 sm:list-disc text-xs sm:text-base mt-6 text-justify space-y-3 sm:ml-6">
+        <hr class="sm:hidden border-white/20">
+        <li>Created multiple reusable, type-safe React components with intuitive, well-structured props to enhance
+          developer experience and consistency across the team.</li>
+        <hr class="sm:hidden border-white/20">
+        <li>Built a custom GeoJSON-to-PDF export tool with advanced controls like layer visibility, color
+          customization,
+          font scaling.</li>
+        <hr class="sm:hidden border-white/20">
+        <li>Built a dynamic breadcrumb system in React with context-based state, handling complex slug-based routing
+          edge cases.
+        </li>
+        <hr class="sm:hidden border-white/20">
+        <li>Architected a highly dynamic table component, which avoided redundant internal state by using modular
+          hooks for features like sorting, row-editing, row-dragging and pagination—giving full outer control and
+          plug-and-play flexibility to consuming components.</li>
+        <hr class="sm:hidden border-white/20">
+        <li>Actively participated in high-level module design discussions at the system level, regularly
+          contributing solutions and architectural input.</li>
+        <hr class="sm:hidden border-white/20">
+        <li>Worked on an SEO-optimized product website using Next.js, structuring components for server-side rendering
+          while isolating dynamic interactivity into minimal client components.</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Experience End -->
+
+  <!-- Tools used -->
+  <div #toolsUsed id="about-tools" class="flex flex-col gap-y-2 pt-[25%] mb-[20%]">
+    <div class="flex flex-col lg:flex-row gap-10">
+
+      <div class="w-full lg:w-1/3 flex flex-col justify-center gap-y-4">
+
+        <span class="about-heading">Preferred Tools</span>
+        <p class="text-slate-400 text-sm sm:text-xl text-justify">
+          There are many tools that can be used for design and development. But these are the tools I prefer to use to
+          build the best digital experiences. In my opinion tools are not permanent and I’ll be always trying out new
+          stuff.
+        </p>
+
+      </div>
+
+      <div
+        class="flex-1 text-slate-300 grid grid-cols-1 xl:grid-cols-2 gap-4 [&>hr]:my-4 [&>hr]:sm:my-4 [&>hr]:border-white/10 [&_i]:text-3xl [&_p]:text-xs [&_p]:sm:text-xl">
+
+        <div class="flex justify-between white-shade-box p-3 sm:p-4 rounded-2xl">
+          <div class="my-auto flex items-center gap-x-4 [&>*]:my-auto">
+            <i class="devicon-react-original"></i>
+            <p class="">ReactJS</p>
+          </div>
+          <span class="label my-auto">Library</span>
+        </div>
+        <div class="flex justify-between white-shade-box p-3 sm:p-4 rounded-2xl">
+          <div class="my-auto flex items-center gap-x-4 [&>*]:my-auto">
+            <i class="devicon-typescript-plain"></i>
+            <p class="">TypeScript</p>
+          </div>
+          <span class="label my-auto">Tool</span>
+        </div>
+        <div class="flex justify-between white-shade-box p-3 sm:p-4 rounded-2xl">
+          <div class="my-auto flex items-center gap-x-4 [&>*]:my-auto">
+            <i class="devicon-nextjs-plain"></i>
+            <p class="">Next.js</p>
+          </div>
+          <span class="label my-auto">Framework</span>
+        </div>
+        <div class="flex justify-between white-shade-box p-3 sm:p-4 rounded-2xl">
+          <div class="my-auto flex items-center gap-x-4 [&>*]:my-auto">
+            <i class="devicon-materialui-plain"></i>
+            <p class="">Material UI</p>
+          </div>
+          <span class="label my-auto">UI/UX</span>
+        </div>
+        <div class="flex justify-between white-shade-box p-3 sm:p-4 rounded-2xl">
+          <div class="my-auto flex items-center gap-x-4 [&>*]:my-auto">
+            <i class="devicon-tailwindcss-original"></i>
+            <p class="">TailwindCSS</p>
+          </div>
+          <span class="label my-auto">Styling</span>
+        </div>
+        <div class="flex justify-between white-shade-box p-3 sm:p-4 rounded-2xl">
+          <div class="my-auto flex items-center gap-x-4 [&>*]:my-auto">
+            <i class="devicon-figma-plain"></i>
+            <p class="">Figma</p>
+          </div>
+          <span class="label my-auto">Designing</span>
+        </div>
+        <div class="flex justify-between white-shade-box p-3 sm:p-4 rounded-2xl">
+          <div class="my-auto flex items-center gap-x-4 [&>*]:my-auto">
+            <i class="devicon-express-original"></i>
+            <p class="">ExpressJS</p>
+          </div>
+          <span class="label my-auto">Rest APIs</span>
+        </div>
+        <div class="flex justify-between white-shade-box p-3 sm:p-4 rounded-2xl">
+          <div class="my-auto flex items-center gap-x-4 [&>*]:my-auto">
+            <i class="devicon-mongodb-plain"></i>
+            <p class="">MongoDB</p>
+          </div>
+          <span class="label my-auto">Database</span>
+        </div>
+        <div class="flex justify-between white-shade-box p-3 sm:p-4 rounded-2xl">
+          <div class="my-auto flex items-center gap-x-4 [&>*]:my-auto">
+            <i class="devicon-spring-original"></i>
+            <p class="">SpringBoot</p>
+          </div>
+          <span class="label my-auto">Rest APIs</span>
+        </div>
+        <div class="flex justify-between white-shade-box p-3 sm:p-4 rounded-2xl">
+          <div class="my-auto flex items-center gap-x-4 [&>*]:my-auto">
+            <i class="devicon-postgresql-plain"></i>
+            <p class="">PostgreSQL</p>
+          </div>
+          <span class="label my-auto">Database</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Tools used End -->
+
+  <!-- Education -->
+  <div #education id="about-education" class="space-y-4 pt-[20%] mb-[20%]">
+
+    <span class="about-heading">Education</span>
+
+    <div class="white-shade-box p-3 sm:p-4 rounded-2xl space-y-4">
+      <div class="flex flex-col lg:flex-row justify-between [&>*]:my-auto">
+        <div class="flex flex-col lg:flex-row gap-x-2">
+          <h4 class="text-white text-base sm:text-xl font-semibold">B.E. in Computer Engineering</h4>
+          <span class="text-slate-400 mt-auto text-sm sm:text-md">(University of Mumbai)</span>
+        </div>
+        <span class="text-slate-200 text-xs sm:text-base">June 2020 - May 2024</span>
+      </div>
+      <p class="text-slate-400 text-justify text-sm sm:text-lg">
+        During the 4 years of studying Computer Engineering, I engaged with a wide curriculum that encompassed many
+        foundational and some advanced concepts. The course contained many domains that come under computing. It was
+        truly a 'Jack of all trades, but master of none'. The course contained all kinds of domains, from Software
+        Development and Engineering to AI and Data Science. The key takeaways from this course were
+      </p>
+      <div class="flex flex-wrap gap-2 opacity-75">
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-2xl text-xs sm:text-base">Problem Solving</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-2xl text-xs sm:text-base">OOPS</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-2xl text-xs sm:text-base">Data Structures and
+          Algorithms</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-2xl text-xs sm:text-base">Software
+          Engineering</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-2xl text-xs sm:text-base">Computer Networks</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-2xl text-xs sm:text-base">AI/ML</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-2xl text-xs sm:text-base">Data Visualizations</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-2xl text-xs sm:text-base">NLP</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-2xl text-xs sm:text-base">Cryptography</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-2xl text-xs sm:text-base">Information
+          Retrieval</span>
+        <span class="text-slate-200 bg-white/10 px-4 py-2 rounded-2xl text-xs sm:text-base">Website Development</span>
+      </div>
+    </div>
+
+  </div>
+  <!-- Education end -->
+
+  <!-- Hobbies Start -->
+  <div #hobbies id="about-hobbies" class="space-y-4 pt-[20%] mb-[20%]">
+    <span class="about-heading">Hobbies</span>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+      <div class="white-shade-box p-3 sm:p-4 rounded-2xl space-y-2">
+        <div class="text-white text-base sm:text-xl font-semibold flex gap-x-4 [&>*]:my-auto">
+          <i class="fa-solid fa-gamepad"></i>
+          <span>Gaming</span>
+        </div>
+        <p class="text-slate-400 text-sm sm:text-base">I enjoy gaming on both Mobile and PC, but I mostly play single
+          player PC games. You can find me gaming primarily on weekends.</p>
+      </div>
+
+      <div class="white-shade-box p-3 sm:p-4 rounded-2xl space-y-2">
+        <div class="text-white text-base sm:text-xl font-semibold flex gap-x-4 [&>*]:my-auto">
+          <i class="fa-solid fa-film"></i>
+          <span>Entertainment</span>
+        </div>
+        <p class="text-slate-400 text-sm sm:text-base">During my free time, I like to watch Movies, TV Shows and
+          Animes. Most of my leisure time goes into this. I also have an anime webiste, feel free to check that out
+          from my work section!</p>
+      </div>
+
+      <div class="white-shade-box p-3 sm:p-4 rounded-2xl space-y-2">
+        <div class="text-white text-base sm:text-xl font-semibold flex gap-x-4 [&>*]:my-auto">
+          <i class="fa-solid fa-bicycle"></i>
+          <span>Cycling</span>
+        </div>
+        <p class="text-slate-400 text-sm sm:text-base">I enjoy early morning long cycling trips on weekends with
+          friends. The clean morning breeze, free from vehicle pollutants, is a refreshing remedy for stress.</p>
+      </div>
+
+      <div class="white-shade-box p-3 sm:p-4 rounded-2xl space-y-2">
+        <div class="text-white text-base sm:text-xl font-semibold flex gap-x-4 [&>*]:my-auto">
+          <i class="fa-solid fa-cube"></i>
+          <span>SpeedCubing</span>
+        </div>
+        <p class="text-slate-400 text-sm sm:text-base">I enjoy only 1 sport, that is this. I've been in it for years,
+          and now I can solve it in under 20 seconds. It greatly challenges your memory and hand-eye coordination,
+          making it very rewarding and stimulating.</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- Hobbies End -->
+
+  <!-- Reach Out Start -->
+  <div #reachout id="about-reachout" class="space-y-4">
+    <span class="about-heading">Reach Out</span>
+    <p class="text-white">
+      <span class="underline contact-me-link cursor-pointer">Mail me</span>
+      directly, or reacth out to me on Social Media platforms
+    </p>
+    <div
+      class="grid grid-cols-2 sm:grid-cols-4 place-items-center lg:flex justify-between white-shade-box p-3 sm:p-4 rounded-2xl">
+      <a href="https://www.linkedin.com/in/affan-ansari-95b58b24a/" target="_blank"
+        class="p-3 w-fit rounded-full cursor-pointer social-div">
+        <img class="w-8 mx-auto mb-2" src="/social-images/linkedin.png" alt="">
+        <span class="text-slate-400 text-sm sm:text-base">LinkedIn</span>
+      </a>
+      <a href="https://github.com/AnsariAffan007" target="_blank"
+        class="p-3 w-fit rounded-full cursor-pointer social-div">
+        <img class="w-8 mx-auto mb-2" src="/social-images/github.png" alt="">
+        <span class="text-slate-400 text-sm sm:text-base">Github</span>
+      </a>
+      <a href="https://www.facebook.com/AffanAnsari007" target="_blank"
+        class="p-3 w-fit rounded-full cursor-pointer social-div">
+        <img class="w-8 mx-auto mb-2" src="/social-images/facebook.png" alt="">
+        <span class="text-slate-400 text-sm sm:text-base">Facebook</span>
+      </a>
+      <a href="https://wa.me/9833084160" target="_blank" class="p-3 w-fit rounded-full cursor-pointer social-div">
+        <img class="w-8 mx-auto mb-2" src="/social-images/whatsapp.png" alt="">
+        <span class="text-slate-400 text-sm sm:text-base">Whatsapp</span>
+      </a>
+      <a href="https://www.instagram.com/mad_titan_49" target="_blank"
+        class="p-3 w-fit rounded-full cursor-pointer social-div">
+        <img class="w-8 mx-auto mb-2" src="/social-images/instagram.png" alt="">
+        <span class="text-slate-400 text-sm sm:text-base">Instagram</span>
+      </a>
+      <a href="https://twitter.com/Unmaykr999" target="_blank" class="p-3 w-fit rounded-full cursor-pointer social-div">
+        <img class="w-8 mx-auto mb-2" src="/social-images/twitter.png" alt="">
+        <span class="text-slate-400 text-sm sm:text-base">Twitter</span>
+      </a>
+      <a href="https://discordapp.com/users/madtitan7336" target="_blank"
+        class="p-3 w-fit rounded-full cursor-pointer social-div">
+        <img class="w-8 mx-auto mb-2" src="/social-images/discord.png" alt="">
+        <span class="text-slate-400 text-sm sm:text-base">Discord</span>
+      </a>
+      <a href="http://www.youtube.com/@affanansari7698" target="_blank"
+        class="p-3 w-fit rounded-full cursor-pointer social-div">
+        <img class="w-8 mx-auto mb-2" src="/social-images/youtube.png" alt="">
+        <span class="text-slate-400 text-sm sm:text-base">Youtube</span>
+      </a>
+    </div>
+  </div>
+  <!-- Reach Out End -->
+
+</section>

@@ -1,0 +1,88 @@
+:host {
+  height: 100%;
+}
+
+#aboutMe {
+  position: absolute;
+  padding-bottom: 40vh;
+  scroll-behavior: smooth;
+}
+
+#aboutMe::-webkit-scrollbar {
+  width: 5px;
+}
+
+@media (min-width: 640px) {
+  #aboutMe::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
+#aboutMe::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+
+#aboutMe::-webkit-scrollbar-thumb {
+  background: rgba(111, 255, 233);
+  border-radius: 50px;
+}
+
+.about-heading {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 800;
+}
+
+@media (min-width: 640px) {
+  .about-heading {
+    font-size: 2rem;
+  }
+}
+
+.white-shade-box {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.social-div:hover span {
+  color: white;
+}
+
+/* Scroller */
+.scroll-wrapper {
+  position: fixed;
+  left: 2.5rem;
+  width: 20%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .scroll-wrapper {
+    display: none;
+  }
+}
+
+.checkpoint {
+  font-weight: 600;
+}
+
+.checkpoint[checkpoint] {
+  color: var(--color-neon);
+}
+
+.scroll-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.scroll-thumb {
+  width: 4px;
+  /* height: 50%; */
+  border-radius: 50px;
+  background: var(--color-neon);
+}
