@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import data from "./projects.json"
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FaIconComponent } from "@fortawesome/angular-fontawesome";
@@ -8,7 +8,8 @@ import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
   selector: 'app-work',
   imports: [FaIconComponent],
   templateUrl: './work.html',
-  styleUrl: './work.scss'
+  styleUrl: './work.scss',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class Work {
   projects = Object.values(data)

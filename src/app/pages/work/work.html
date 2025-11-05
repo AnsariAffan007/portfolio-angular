@@ -3,50 +3,53 @@
   class="grid grid-cols-4 lg:grid-cols-3 grid-rows-6 md:grid-rows-4"
 >
   <div class="col-span-4 lg:col-span-2 row-span-2 sm:row-span-3 md:row-span-2 lg:row-span-3">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        @for (project of projects; track $index) {
-          <div
-            class="swiper-slide section-padding relative flex flex-col justify-center"
-            [attr.data-bs-index]="$index + 1"
-          >
-            <div class="space-y-2">
-              <span class="text-white text-xl sm:text-4xl font-bold">{{ project.name }}</span>
-              <p class="text-xs sm:text-base text-white">
-                {{ project.caption }}
-              </p>
-            </div>
-            <div class="mt-4 text-sm sm:text-xl flex gap-x-6">
-              @if (project.siteLink !== null) {
-                <a
-                  class="text-white flex gap-x-2 items-center"
-                  [href]="project.siteLink"
-                  target="_blank"
-                >
-                  <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
-                </a>
-              } @else {
-                <span></span>
-              }
-              <a
-                class="text-white flex gap-x-2 items-center"
-                [href]="project.gitLink"
-                target="_blank"
-              >
-                <fa-icon [icon]="faGithub"></fa-icon>
-              </a>
-              <a
-                class="text-white flex gap-x-2 items-center"
-                [href]="project.demoLink"
-                target="_blank"
-              >
-                <fa-icon [icon]="faYoutube"></fa-icon>
-              </a>
-            </div>
+    <swiper-container
+      class="swiper"
+      loop="true"
+      navigation-next-el=".swiper-button-next"
+      navigation-previous-el=".swiper-button-prev"
+    >
+      @for (project of projects; track $index) {
+        <swiper-slide
+          class="swiper-slide section-padding relative flex flex-col justify-center"
+          [attr.data-bs-index]="$index + 1"
+        >
+          <div class="space-y-2">
+            <span class="text-white text-xl sm:text-4xl font-bold">{{ project.name }}</span>
+            <p class="text-xs sm:text-base text-white">
+              {{ project.caption }}
+            </p>
           </div>
-        }
-      </div>
-    </div>
+          <div class="mt-4 text-sm sm:text-xl flex gap-x-6">
+            @if (project.siteLink !== null) {
+              <a
+                class="text-white flex gap-x-2 items-center"
+                [href]="project.siteLink"
+                target="_blank"
+              >
+                <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+              </a>
+            } @else {
+              <span></span>
+            }
+            <a
+              class="text-white flex gap-x-2 items-center"
+              [href]="project.gitLink"
+              target="_blank"
+            >
+              <fa-icon [icon]="faGithub"></fa-icon>
+            </a>
+            <a
+              class="text-white flex gap-x-2 items-center"
+              [href]="project.demoLink"
+              target="_blank"
+            >
+              <fa-icon [icon]="faYoutube"></fa-icon>
+            </a>
+          </div>
+        </swiper-slide>
+      }
+    </swiper-container>
   </div>
 
   <div
