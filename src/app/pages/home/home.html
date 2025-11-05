@@ -1,9 +1,12 @@
-<section id="introduction" class="grid grid-cols-4 md:grid-cols-3 grid-rows-5 md:grid-rows-4 h-[90svh]">
-
+<section
+  id="introduction"
+  class="grid grid-cols-4 md:grid-cols-3 grid-rows-5 md:grid-rows-4 h-[90svh]"
+>
   <div
-    class="col-span-4 md:col-span-3 lg:col-span-2 row-span-2 lg:row-span-3 section-padding flex flex-col justify-center gap-y-3 border-b border-white/15">
+    class="col-span-4 md:col-span-3 lg:col-span-2 row-span-2 lg:row-span-3 section-padding flex flex-col justify-center gap-y-3 border-b border-white/15"
+  >
     <h1 class="text-white">
-      Hi, I'm<br>
+      Hi, I'm<br />
       <span class="text-3xl sm:text-4xl md:text-6xl font-black">MOHAMMED AFFAN ANSARI</span>
     </h1>
     <div class="flex flex-col sm:flex-row gap-2">
@@ -13,24 +16,44 @@
     </div>
   </div>
 
-  <div id="intro-description"
+  <div
+    id="intro-description"
     class="row-span-1 lg:row-span-3 col-span-4 md:col-span-3 lg:col-span-1 flex items-center section-padding border-b lg:border-l border-white/15"
-    (mouseenter)="descMouseEnter()" (mouseleave)="descMouseLeave()">
+    (mouseenter)="descMouseEnter()"
+    (mouseleave)="descMouseLeave()"
+  >
     <span class="text-slate-200 text-xs sm:text-base md:text-lg">
       I am proficient in solving
-      <span class="desc-skill-highlight -z-10" [attr.activate]="descHovering">UI/UX</span> problems, developing
-      <span class="desc-skill-highlight -z-10" [attr.activate]="descHovering">designs</span> into functional
-      <span class="desc-skill-highlight -z-10" [attr.activate]="descHovering">websites</span>, and integrating them
-      with
-      <span class="desc-skill-highlight -z-10" [attr.activate]="descHovering">backend</span> systems to create fully
-      fledged
-      solutions.
+      <span
+        class="desc-skill-highlight -z-10"
+        [attr.activate]="descHovering"
+        >UI/UX</span
+      >
+      problems, developing
+      <span
+        class="desc-skill-highlight -z-10"
+        [attr.activate]="descHovering"
+        >designs</span
+      >
+      into functional
+      <span
+        class="desc-skill-highlight -z-10"
+        [attr.activate]="descHovering"
+        >websites</span
+      >, and integrating them with
+      <span
+        class="desc-skill-highlight -z-10"
+        [attr.activate]="descHovering"
+        >backend</span
+      >
+      systems to create fully fledged solutions.
     </span>
   </div>
 
   <div
     class="col-span-4 md:col-span-1 flex items-center justify-between md:justify-center section-padding gap-x-4 sm:gap-x-10 border-b md:border-l border-white/15 md:order-5 cursor-pointer"
-    (click)="openResume()">
+    (click)="openResume()"
+  >
     <span class="text-slate-200 text-2xl my-auto sm:text-3xl md:text-4xl font-black">
       <span class="inline md:hidden">READ</span>
       RESUME
@@ -40,20 +63,31 @@
     </span>
   </div>
 
-  <div id="home-about-link"
-    class="col-span-2 md:col-span-1 flex justify-between md:justify-center items-center gap-x-2 sm:gap-x-10 section-padding border-r border-white/15 cursor-pointer about-link">
+  <div
+    id="home-about-link"
+    class="col-span-2 md:col-span-1 flex justify-between md:justify-center items-center gap-x-2 sm:gap-x-10 section-padding border-r border-white/15 cursor-pointer about-link"
+  >
     <span class="text-slate-200 text-xl sm:text-3xl md:text-4xl font-black">ABOUT</span>
     <span class="my-auto rotate-90">
-      <img src="/arrow_right.svg" class="w-[30px] sm:w-[50px]" alt="">
+      <img
+        src="/arrow_right.svg"
+        class="w-[30px] sm:w-[50px]"
+        alt=""
+      />
     </span>
   </div>
 
-  <div id="home-work-link"
-    class="col-span-2 md:col-span-1 flex justify-between md:justify-center items-center gap-x-4 sm:gap-x-10 section-padding border-white/15 cursor-pointer work-link">
+  <div
+    id="home-work-link"
+    class="col-span-2 md:col-span-1 flex justify-between md:justify-center items-center gap-x-4 sm:gap-x-10 section-padding border-white/15 cursor-pointer work-link"
+  >
     <span class="text-slate-200 my-auto text-xl sm:text-3xl md:text-4xl font-black">WORK</span>
     <span class="my-auto text-black">
-      <img src="/arrow_right.svg" class="w-[30px] sm:w-[50px]" alt="">
+      <img
+        src="/arrow_right.svg"
+        class="w-[30px] sm:w-[50px]"
+        alt=""
+      />
     </span>
   </div>
-
 </section>
