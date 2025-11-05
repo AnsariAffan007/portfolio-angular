@@ -1,0 +1,218 @@
+{
+  "animesake": {
+    "name": "AnimeSake",
+    "caption": "An Anime Discovery, Reviewing and Tracking Web App.",
+    "imageSrc": "../images/project-shots/screencapture-animesake-onrender-2024-03-04-12_53_24.png",
+    "gitLink": "https://github.com/AnsariAffan007/animesake--anime-web-app",
+    "demoLink": "https://youtu.be/BUGgdE6QpA8?si=rM5ERFHyPmxTg9qX",
+    "siteLink": "https://animesake.onrender.com",
+    "description": "Dynamic search with suggestions. Filteration system available where various parameters can be used to filter animes like year and season, sort by popularity, rating etc, age limimations, and by more than 50 genres. Watchlist and Watch history lists, and Reviewing system also available.",
+    "skillsUsed": [
+      "Bootstrap",
+      "CSS",
+      "SwiperJS",
+      "ExpressJS",
+      "MongoDB",
+      "JikanAPI"
+    ]
+  },
+  "bitebook": {
+    "name": "BiteBook",
+    "caption": "A Recipe Creation and Sharing Web App.",
+    "imageSrc": "../images/project-shots/bitebook.png",
+    "gitLink": "https://github.com/AnsariAffan007/bite-book",
+    "demoLink": "#",
+    "siteLink": "https://bite-book.vercel.app/",
+    "description": "Recipe creation and sharing app where users can build recipes as interactive maps, simulating multi-threaded cooking processes. It features session-based authentication, password reset functionality, and stores recipe images using Cloudinary.",
+    "skillsUsed": [
+      "Next.JS",
+      "Material UI",
+      "PostgreSQL",
+      "DrizzleORM",
+      "Cloudinary",
+      "react-flow"
+    ]
+  },
+  "beltzy": {
+    "name": "Beltzy",
+    "caption": "Multi-vendor Belts buying and selling platform.",
+    "imageSrc": "../images/project-shots/beltzy.png",
+    "gitLink": "https://github.com/AnsariAffan007/beltzy-frontend",
+    "demoLink": "https://youtu.be/-GsNBaOSqeY?si=OPuOHt0Ht328ZE9s",
+    "siteLink": "https://beltzy.netlify.app/",
+    "description": "A web app created with MERN and Tailwind, where multiple sellers can register and sell their products, with admin verification implemented to only let a verified seller be able to list their products. Buyers book belts, sellers update the order status, with buyers marking the final \"delivered\" status, on successful delivery of the product.",
+    "skillsUsed": [
+      "ReactJS",
+      "MongoDB",
+      "ExpressJS",
+      "TailwindCSS",
+      "React-auth-kit",
+      "React-hook-form",
+      "Role-based-Access-Control"
+    ]
+  },
+  "animerater": {
+    "name": "Anime Rater",
+    "caption": "Anime Rating Predictor.",
+    "imageSrc": "../images/project-shots/anime-rater.png",
+    "gitLink": "https://github.com/AnsariAffan007/anime-rater",
+    "demoLink": "https://youtu.be/7-DR9q9Hw_k?si=q5XdxUa2U_0fm_Ut",
+    "siteLink": "https://anime-rater.onrender.com/",
+    "description": "Made with XGBoost at the Backend for training the model, and TailwindCSS for the FrontEnd.",
+    "skillsUsed": [
+      "Html",
+      "CSS",
+      "Javascript",
+      "TailwindCSS",
+      "Flask API",
+      "XGBoost"
+    ]
+  },
+  "todolist": {
+    "name": "To Do List",
+    "caption": "Create multiple lists, with Google Auth.",
+    "imageSrc": "../images/project-shots/todolist.png",
+    "gitLink": "https://github.com/AnsariAffan007/To-do-list",
+    "demoLink": "https://youtu.be/bc1p3576Qn4?si=FLJQiWWQ1OVdPsgS",
+    "siteLink": "https://todolist-h6mr.onrender.com/",
+    "description": "A to do list made with ExpressJS and MongoDB, with Google Authentication using PassportJS",
+    "skillsUsed": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "ExpressJS",
+      "PassportJS",
+      "Google OAuth",
+      "MongoDB"
+    ]
+  },
+  "roxycomputers": {
+    "name": "Roxy Computers",
+    "caption": "Issue registering platform for a firm.",
+    "imageSrc": "../images/project-shots/roxy-comps.png",
+    "gitLink": "https://github.com/AnsariAffan007/roxy-computers",
+    "demoLink": "https://youtu.be/WeO9Pk5aCu0?si=PGzqZMcLUKOdSKIo",
+    "siteLink": "https://roxy-computers.onrender.com/",
+    "description": "A computer harware repair firm's marketing and issue registering site made with ExpressJS and MongoD",
+    "skillsUsed": [
+      "Bootstrap",
+      "CSS",
+      "ExpressJS",
+      "MongoDB",
+      "Role-based Auth"
+    ]
+  },
+  "calculator": {
+    "name": "React Calculator",
+    "caption": "Practice site for ReactJS.",
+    "imageSrc": "../images/project-shots/react-calci.png",
+    "gitLink": "https://github.com/AnsariAffan007/calculator-react",
+    "demoLink": "https://youtu.be/C5bVkIgxyCQ?si=yRe5bZx3LXhEgR0a",
+    "siteLink": "https://simplycalcireact.netlify.app/",
+    "description": "A starter ReactJS project, with its UI made in plain CSS.Originally made it to get better with the fundamentals of ReactJS such as State Management.",
+    "skillsUsed": [
+      "ReactJS",
+      "CSS"
+    ]
+  },
+  "toDoListMui": {
+    "name": "To Do List (Static)",
+    "caption": "Static one, made to practice MUI.",
+    "imageSrc": "../images/project-shots/todolist-mui.png",
+    "gitLink": "https://github.com/AnsariAffan007/to-do-list-mui",
+    "demoLink": "https://youtu.be/b5Cy0918sic",
+    "siteLink": "https://to-do-list-mui.vercel.app/",
+    "description": "A static website, with 3 Lists. Ability to separately manage them, by adding and checking out list items, and deleting the checked items. Integrated MUI with Hook - forms for field validations.",
+    "skillsUsed": [
+      "ReactJS",
+      "Material UI",
+      "React-hook-form"
+    ]
+  },
+  "newsjet": {
+    "name": "NewsJet",
+    "caption": "News site with verious filters, and infinite scrolling.",
+    "imageSrc": "../images/project-shots/newsjet.png",
+    "gitLink": "https://github.com/AnsariAffan007/newsjet",
+    "demoLink": "https://youtu.be/B2-v7JHGfvI?si=7ogCTY7COnew1va5",
+    "siteLink": null,
+    "description": "Made using the NewsAPI, and ReactJS. It has filters of countries and categories. Categories include Business, entertainment, general, health, science, sports and technology. The Site is not deployed as NewsAPI doesn't respond to requests coming from production environments.",
+    "skillsUsed": [
+      "ReactJS",
+      "NewsAPI",
+      "Infinite-scrolling"
+    ]
+  },
+  "expensetracker": {
+    "name": "Expense Tracker",
+    "caption": "Track expenses, and save them, using inbuilt screenshot feature.",
+    "imageSrc": "../images/project-shots/expense-tracker.png",
+    "gitLink": "https://github.com/AnsariAffan007/Expense-tracker",
+    "demoLink": "https://youtu.be/r71D9vXMdf4?si=a3tvtJC74RnHKeVc",
+    "siteLink": "https://ansariaffan007.github.io/Expense-tracker/",
+    "description": "Website made for tracking expenses while shopping. Saves the data to Local storage.Also contains a screenshot feature to download the image of the Cart.",
+    "skillsUsed": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  },
+  "potatoweather": {
+    "name": "Potato Weather",
+    "caption": "Made with visual representations of weathers.",
+    "imageSrc": "../images/project-shots/potato-weather.png",
+    "gitLink": "https://github.com/AnsariAffan007/WeatherApp",
+    "demoLink": "https://youtu.be/cktOe_NJsUs",
+    "siteLink": "https://ansariaffan007.github.io/WeatherApp/",
+    "description": "A weather app created using the OpenWeatherMap API. Displays upto 5 days of weather forecast. Location can be searched. Dynamic backgrounds are displayed based on the weather conditions.",
+    "skillsUsed": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "OpenWeatherMap API"
+    ]
+  },
+  "simonsays": {
+    "name": "Simon Says",
+    "caption": "To practice VanillaJS. Have fun!",
+    "imageSrc": "../images/project-shots/simon-game.png",
+    "gitLink": "https://github.com/AnsariAffan007/Simon-Game",
+    "demoLink": "https://youtu.be/YvgDfxY5rME?si=_PZ2HzqWsHmV8bP5",
+    "siteLink": "https://ansariaffan007.github.io/Simon-Game/",
+    "description": "Simulation of the famous game Simon Says, where one's memory is tested to the limits. A very beginner level project made with HTML, CSS and JavaScript",
+    "skillsUsed": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  },
+  "diceware": {
+    "name": "DiceWare",
+    "caption": "Create unbreakable passwords.",
+    "imageSrc": "images/project-shots/diceware.png",
+    "gitLink": "https://github.com/AnsariAffan007/diceware-vanillaJs",
+    "demoLink": "https://youtu.be/1nVD8EBk0oo",
+    "siteLink": "https://ansariaffan007.github.io/diceware-vanillaJs/",
+    "description": "Made with Vanilla JS, this website lets you create strong passphrase by utlizing the Diceware concept, which focuses on generating passphrases that are very difficult to crack using the most widely used passwordtechniques.",
+    "skillsUsed": [
+      "Diceware-concept",
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  },
+  "cubebooks": {
+    "name": "Cube Books",
+    "caption": "Educate yourself about SpeedCubing.",
+    "imageSrc": "../images/project-shots/cubebooks.png",
+    "gitLink": "https://github.com/AnsariAffan007/cubebooks",
+    "demoLink": "https://youtu.be/QKkbix11JHo?si=DHFM_PgskZhJayD0",
+    "siteLink": "https://ansariaffan007.github.io/cubebooks/",
+    "description": "Made purely with Bootstrap, this website contains all the material required to learn speedcubing, like what cube to buy, what teachers to follow and more.",
+    "skillsUsed": [
+      "HTML5",
+      "CSS",
+      "Bootstrap"
+    ]
+  }
+}

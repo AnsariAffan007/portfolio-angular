@@ -1,1 +1,120 @@
-<p>work works!</p>
+<section
+  id="work"
+  class="grid grid-cols-4 lg:grid-cols-3 grid-rows-6 md:grid-rows-4"
+>
+  <div class="col-span-4 lg:col-span-2 row-span-2 sm:row-span-3 md:row-span-2 lg:row-span-3">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        @for (project of projects; track $index) {
+          <div
+            class="swiper-slide section-padding relative flex flex-col justify-center"
+            [attr.data-bs-index]="$index + 1"
+          >
+            <div class="space-y-2">
+              <span class="text-white text-xl sm:text-4xl font-bold">{{ project.name }}</span>
+              <p class="text-xs sm:text-base text-white">
+                {{ project.caption }}
+              </p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="description-container"
+    class="row-span-2 md:row-span-1 lg:row-span-3 col-span-4 lg:col-span-1 text-slate-300 grid place-items-center border-b lg:border-l border-white/15 relative"
+  >
+    @for (project of projects; track $index) {
+      <div
+        class="px-[0.75rem] sm:px-10 absolute lg:top-[calc(50%+3rem)] text-slate-400 project-description"
+        data-description-active="inactive"
+      >
+        <p class="text-xs sm:text-sm md:text-base lg:text-lg">
+          {{ project.description }}
+        </p>
+      </div>
+    }
+    <!-- <div class="px-6 absolute project-description">
+        <p class="text-xs sm:text-sm md:text-base lg:text-lg"></p>
+      </div> -->
+  </div>
+
+  <div
+    id="skillsContainer"
+    class="col-span-4 sm:col-span-2 flex items-center border-b sm:border-none lg:border-t border-white/15 relative overflow-hidden"
+  >
+    @for (project of projects; track $index) {
+      <div
+        class="section-padding size-full absolute flex flex-wrap content-center gap-1 sm:gap-2 skill-box"
+        data-project-name="${projName}"
+        data-status="down"
+      >
+        @for (skill of project.skillsUsed; track $index) {
+          <div class="label w-fit">{{ skill }}</div>
+        }
+      </div>
+    }
+    <!-- <div class="section-padding size-full absolute flex flex-wrap content-center gap-2">
+        <div class="label w-fit">ReactJS</div>
+      </div> -->
+  </div>
+
+  <div class="col-span-4 sm:col-span-2 lg:col-span-1 grid grid-cols-3">
+    <div class="grid place-items-center sm:border-l border-white/15">
+      <div class="text-lg sm:text-2xl relative text-slate-300 flex gap-x-2">
+        <!-- First span is just to make space for the number span -->
+        <span class="my-auto me-6"></span>
+        <span class="block absolute overflow-hidden w-6 h-full">
+          @for (project of projects; track $index) {
+            <span
+              class="number-span absolute"
+              data-status="down"
+            >
+              {{ $index + 1 }}
+            </span>
+          }
+        </span>
+        <span class="my-auto">-</span>
+        <span class="my-auto">{{ projects.length }}</span>
+      </div>
+    </div>
+
+    <div class="grid place-items-center border-l border-white/15 swiper-button-prev">
+      <span>
+        <svg
+          class="arrow-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="75"
+          height="50"
+          viewBox="0 0 41 22"
+          fill="none"
+        >
+          <path
+            d="M0.871437 12.021C8.69497 12.021 14.4008 21.5909 14.4597 21.7084C14.6361 22.0019 14.9891 22.0606 15.2832 21.9432C15.5773 21.7671 15.6361 21.4148 15.5185 21.1213C15.342 20.769 11.6361 14.663 5.93026 12.021L39.695 12.021C40.0479 12.021 40.2832 11.7861 40.2832 11.4339C40.2832 11.0816 40.0479 10.8468 39.695 10.8468L5.93026 10.8468C11.6361 8.20475 15.342 2.09877 15.5185 1.7465C15.6361 1.45295 15.5773 1.10068 15.2832 0.924543C14.9891 0.80712 14.6361 0.865831 14.4597 1.15939C14.4008 1.27681 8.69497 10.8468 0.871437 10.8468C0.518497 10.8468 0.283203 11.0816 0.283203 11.4339C0.283203 11.7861 0.518497 12.021 0.871437 12.021Z"
+            fill="#cbd5e1"
+          />
+        </svg>
+      </span>
+    </div>
+
+    <div class="grid place-items-center border-l border-white/15 swiper-button-next">
+      <span class="rotate-180">
+        <svg
+          class="arrow-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="75"
+          height="50"
+          viewBox="0 0 41 22"
+          fill="none"
+        >
+          <path
+            d="M0.871437 12.021C8.69497 12.021 14.4008 21.5909 14.4597 21.7084C14.6361 22.0019 14.9891 22.0606 15.2832 21.9432C15.5773 21.7671 15.6361 21.4148 15.5185 21.1213C15.342 20.769 11.6361 14.663 5.93026 12.021L39.695 12.021C40.0479 12.021 40.2832 11.7861 40.2832 11.4339C40.2832 11.0816 40.0479 10.8468 39.695 10.8468L5.93026 10.8468C11.6361 8.20475 15.342 2.09877 15.5185 1.7465C15.6361 1.45295 15.5773 1.10068 15.2832 0.924543C14.9891 0.80712 14.6361 0.865831 14.4597 1.15939C14.4008 1.27681 8.69497 10.8468 0.871437 10.8468C0.518497 10.8468 0.283203 11.0816 0.283203 11.4339C0.283203 11.7861 0.518497 12.021 0.871437 12.021Z"
+            fill="#cbd5e1"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</section>
