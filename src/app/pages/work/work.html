@@ -4,10 +4,12 @@
 >
   <div class="col-span-4 lg:col-span-2 row-span-2 sm:row-span-3 md:row-span-2 lg:row-span-3">
     <swiper-container
+      #swiperRef
       class="swiper"
       loop="true"
       navigation-next-el=".swiper-button-next"
       navigation-previous-el=".swiper-button-prev"
+      allow-touch-move="false"
     >
       @for (project of projects; track $index) {
         <swiper-slide
@@ -59,7 +61,7 @@
     @for (project of projects; track $index) {
       <div
         class="px-[0.75rem] sm:px-10 absolute lg:top-[calc(50%+3rem)] text-slate-400 project-description"
-        data-description-active="inactive"
+        [attr.data-description-active]="activeIndex === $index ? `active` : `inactive`"
       >
         <p class="text-xs sm:text-sm md:text-base lg:text-lg">
           {{ project.description }}
@@ -78,8 +80,7 @@
     @for (project of projects; track $index) {
       <div
         class="section-padding size-full absolute flex flex-wrap content-center gap-1 sm:gap-2 skill-box"
-        data-project-name="${projName}"
-        data-status="down"
+        [attr.data-status]="indexStatuses[$index]"
       >
         @for (skill of project.skillsUsed; track $index) {
           <div class="label w-fit">{{ skill }}</div>
@@ -100,7 +101,7 @@
           @for (project of projects; track $index) {
             <span
               class="number-span absolute"
-              data-status="down"
+              [attr.data-status]="indexStatuses[$index]"
             >
               {{ $index + 1 }}
             </span>
