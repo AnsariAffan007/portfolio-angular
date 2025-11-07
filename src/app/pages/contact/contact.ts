@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faArrowUp, faCircleCheck, faEnvelope, faLightbulb, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-contact',
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, RouterLink],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })

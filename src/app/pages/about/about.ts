@@ -1,16 +1,16 @@
 import { isPlatformBrowser } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
-import { RouterLink } from "@angular/router";
+import { AfterViewInit, Component, ElementRef, inject, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
+import { ActivatedRoute, RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-about',
-  imports: [RouterLink],
   templateUrl: './about.html',
-  styleUrl: './about.scss'
+  styleUrl: './about.scss',
+  imports: [RouterLink]
 })
 export class About implements AfterViewInit {
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, private route: ActivatedRoute) { }
 
   // Save section links
   @ViewChild("expCheckpoint") experienceLink!: ElementRef;
@@ -41,6 +41,13 @@ export class About implements AfterViewInit {
   educationToHobbies: number = 0;
   hobbiesToReachOut: number = 0;
 
+  fragment: string | null = null
+  ngOnInit() {
+    this.route.fragment.subscribe(fragment => {
+      this.fragment = fragment
+    });
+  }
+
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       setTimeout(() => {
@@ -50,6 +57,10 @@ export class About implements AfterViewInit {
         this.educationToHobbies = this.getDistance(this.education, this.hobbies)
         this.hobbiesToReachOut = this.getDistance(this.hobbies, this.reachout)
       }, 0)
+      try {
+        document.getElementById(this.fragment || '')?.scrollIntoView();
+      }
+      catch (e) { }
     }
   }
 
