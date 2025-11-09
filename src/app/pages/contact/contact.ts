@@ -44,21 +44,23 @@ export class Contact {
   async onSubmit(e: SubmitEvent) {
     this.loading = true
     try {
-      await emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target as HTMLFormElement, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      await emailjs.sendForm('service_jk5naeq', 'template_9bps5gn', e.target as HTMLFormElement, {
+        publicKey: 'IEhwzJLg0cXDJPgBz',
       })
+      alert("Mail sent! I will get back to you soon.")
+      this.loading = false
       this.sent = true
+      this.cdr.detectChanges();
       setTimeout(() => {
         this.sent = false
-      }, 200);
+        this.cdr.detectChanges();
+      }, 2000);
     }
     catch (error: unknown) {
       if (error instanceof EmailJSResponseStatus) {
         alert(error.text);
       }
-    }
-    finally {
-      this.loading = false
+      this.loading = false;
       this.cdr.detectChanges();
     }
   }

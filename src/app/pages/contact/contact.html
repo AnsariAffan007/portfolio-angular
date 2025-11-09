@@ -72,11 +72,11 @@
           >
         </div>
         <button
-          class="w-20 sm:w-28 h-6 sm:h-10 text-xs sm:text-base outline-none submit-btn flex justify-center gap-x-2 [&>*]:my-auto"
+          class="w-20 sm:w-28 h-6 sm:h-10 text-xs sm:text-base outline-none submit-btn flex justify-center gap-x-2 [&>*]:my-auto cursor-pointer"
           type="submit"
-          [disabled]="loading"
+          [disabled]="loading || sent"
         >
-          @if (!loading) {
+          @if (!loading && !sent) {
             <span class="font-semibold send-text">Send</span>
             <img
               src="send.png"
