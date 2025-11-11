@@ -1,4 +1,22 @@
 {
+  "society-management-portal": {
+    "name": "Society Management Portal",
+    "caption": "Made for society bearers and tenants alike, for seamless society proceses management.",
+    "imageSrc": "/project-shots/society-management-portal.png",
+    "demoLink": "https://youtu.be/jlr0CUHZEl8?si=NWD2cp7T-IMjsoMw",
+    "siteLink": null,
+    "gitLink": null,
+    "description": "Society management portal with RBAC, user management, and seamless onboarding. Secure document storage, with file system enabled through self referencing rows, and one way syncing with the 3rd party storage provider; Mega.",
+    "skillsUsed": [
+      "NestJS",
+      "PostgreSQL",
+      "TypeORM",
+      "ReactJS",
+      "Mega",
+      "AWS Lambda",
+      "Github workflows"
+    ]
+  },
   "animesake": {
     "name": "AnimeSake",
     "caption": "An Anime Discovery, Reviewing and Tracking Web App.",
