@@ -2,7 +2,7 @@
   "animesake": {
     "name": "AnimeSake",
     "caption": "An Anime Discovery, Reviewing and Tracking Web App.",
-    "imageSrc": "../images/project-shots/screencapture-animesake-onrender-2024-03-04-12_53_24.png",
+    "imageSrc": "/project-shots/animesake_2.png",
     "gitLink": "https://github.com/AnsariAffan007/animesake--anime-web-app",
     "demoLink": "https://youtu.be/BUGgdE6QpA8?si=rM5ERFHyPmxTg9qX",
     "siteLink": "https://animesake.onrender.com",
@@ -19,7 +19,7 @@
   "bitebook": {
     "name": "BiteBook",
     "caption": "A Recipe Creation and Sharing Web App.",
-    "imageSrc": "../images/project-shots/bitebook.png",
+    "imageSrc": "/project-shots/bitebook.png",
     "gitLink": "https://github.com/AnsariAffan007/bite-book",
     "demoLink": "#",
     "siteLink": "https://bite-book.vercel.app/",
@@ -36,7 +36,7 @@
   "beltzy": {
     "name": "Beltzy",
     "caption": "Multi-vendor Belts buying and selling platform.",
-    "imageSrc": "../images/project-shots/beltzy.png",
+    "imageSrc": "/project-shots/beltzy.png",
     "gitLink": "https://github.com/AnsariAffan007/beltzy-frontend",
     "demoLink": "https://youtu.be/-GsNBaOSqeY?si=OPuOHt0Ht328ZE9s",
     "siteLink": "https://beltzy.netlify.app/",
@@ -54,7 +54,7 @@
   "animerater": {
     "name": "Anime Rater",
     "caption": "Anime Rating Predictor.",
-    "imageSrc": "../images/project-shots/anime-rater.png",
+    "imageSrc": "/project-shots/anime-rater.png",
     "gitLink": "https://github.com/AnsariAffan007/anime-rater",
     "demoLink": "https://youtu.be/7-DR9q9Hw_k?si=q5XdxUa2U_0fm_Ut",
     "siteLink": "https://anime-rater.onrender.com/",
@@ -71,7 +71,7 @@
   "todolist": {
     "name": "To Do List",
     "caption": "Create multiple lists, with Google Auth.",
-    "imageSrc": "../images/project-shots/todolist.png",
+    "imageSrc": "/project-shots/todolist.png",
     "gitLink": "https://github.com/AnsariAffan007/To-do-list",
     "demoLink": "https://youtu.be/bc1p3576Qn4?si=FLJQiWWQ1OVdPsgS",
     "siteLink": "https://todolist-h6mr.onrender.com/",
@@ -89,7 +89,7 @@
   "roxycomputers": {
     "name": "Roxy Computers",
     "caption": "Issue registering platform for a firm.",
-    "imageSrc": "../images/project-shots/roxy-comps.png",
+    "imageSrc": "/project-shots/roxy-comps.png",
     "gitLink": "https://github.com/AnsariAffan007/roxy-computers",
     "demoLink": "https://youtu.be/WeO9Pk5aCu0?si=PGzqZMcLUKOdSKIo",
     "siteLink": "https://roxy-computers.onrender.com/",
@@ -105,7 +105,7 @@
   "calculator": {
     "name": "React Calculator",
     "caption": "Practice site for ReactJS.",
-    "imageSrc": "../images/project-shots/react-calci.png",
+    "imageSrc": "/project-shots/react-calci.png",
     "gitLink": "https://github.com/AnsariAffan007/calculator-react",
     "demoLink": "https://youtu.be/C5bVkIgxyCQ?si=yRe5bZx3LXhEgR0a",
     "siteLink": "https://simplycalcireact.netlify.app/",
@@ -118,7 +118,7 @@
   "toDoListMui": {
     "name": "To Do List (Static)",
     "caption": "Static one, made to practice MUI.",
-    "imageSrc": "../images/project-shots/todolist-mui.png",
+    "imageSrc": "/project-shots/todolist-mui.png",
     "gitLink": "https://github.com/AnsariAffan007/to-do-list-mui",
     "demoLink": "https://youtu.be/b5Cy0918sic",
     "siteLink": "https://to-do-list-mui.vercel.app/",
@@ -132,7 +132,7 @@
   "newsjet": {
     "name": "NewsJet",
     "caption": "News site with verious filters, and infinite scrolling.",
-    "imageSrc": "../images/project-shots/newsjet.png",
+    "imageSrc": "/project-shots/newsjet.png",
     "gitLink": "https://github.com/AnsariAffan007/newsjet",
     "demoLink": "https://youtu.be/B2-v7JHGfvI?si=7ogCTY7COnew1va5",
     "siteLink": null,
@@ -146,7 +146,7 @@
   "expensetracker": {
     "name": "Expense Tracker",
     "caption": "Track expenses, and save them, using inbuilt screenshot feature.",
-    "imageSrc": "../images/project-shots/expense-tracker.png",
+    "imageSrc": "/project-shots/expense-tracker.png",
     "gitLink": "https://github.com/AnsariAffan007/Expense-tracker",
     "demoLink": "https://youtu.be/r71D9vXMdf4?si=a3tvtJC74RnHKeVc",
     "siteLink": "https://ansariaffan007.github.io/Expense-tracker/",
@@ -160,7 +160,7 @@
   "potatoweather": {
     "name": "Potato Weather",
     "caption": "Made with visual representations of weathers.",
-    "imageSrc": "../images/project-shots/potato-weather.png",
+    "imageSrc": "/project-shots/potato-weather.png",
     "gitLink": "https://github.com/AnsariAffan007/WeatherApp",
     "demoLink": "https://youtu.be/cktOe_NJsUs",
     "siteLink": "https://ansariaffan007.github.io/WeatherApp/",
@@ -175,7 +175,7 @@
   "simonsays": {
     "name": "Simon Says",
     "caption": "To practice VanillaJS. Have fun!",
-    "imageSrc": "../images/project-shots/simon-game.png",
+    "imageSrc": "/project-shots/simon-game.png",
     "gitLink": "https://github.com/AnsariAffan007/Simon-Game",
     "demoLink": "https://youtu.be/YvgDfxY5rME?si=_PZ2HzqWsHmV8bP5",
     "siteLink": "https://ansariaffan007.github.io/Simon-Game/",
@@ -189,7 +189,7 @@
   "diceware": {
     "name": "DiceWare",
     "caption": "Create unbreakable passwords.",
-    "imageSrc": "images/project-shots/diceware.png",
+    "imageSrc": "/project-shots/diceware.png",
     "gitLink": "https://github.com/AnsariAffan007/diceware-vanillaJs",
     "demoLink": "https://youtu.be/1nVD8EBk0oo",
     "siteLink": "https://ansariaffan007.github.io/diceware-vanillaJs/",
@@ -204,7 +204,7 @@
   "cubebooks": {
     "name": "Cube Books",
     "caption": "Educate yourself about SpeedCubing.",
-    "imageSrc": "../images/project-shots/cubebooks.png",
+    "imageSrc": "/project-shots/cubebooks.png",
     "gitLink": "https://github.com/AnsariAffan007/cubebooks",
     "demoLink": "https://youtu.be/QKkbix11JHo?si=DHFM_PgskZhJayD0",
     "siteLink": "https://ansariaffan007.github.io/cubebooks/",
