@@ -12,7 +12,8 @@ import { isPlatformBrowser } from '@angular/common';
   imports: [FaIconComponent],
   templateUrl: './work.html',
   styleUrl: './work.scss',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  host: { ngSkipHydration: 'true' }
 })
 export class Work {
 
